@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Tracker Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Tracker Dashboard</h1>
+
+        <!-- Stock Search Input -->
+        <div class="stock-search">
+           <select id="stock-symbol">
+                <option value="AAPL">AAPL</option>
+                <option value="GOOGL">GOOGL</option> <!-- Corrected symbol -->
+                <option value="MSFT">MSFT</option>
+                <option value="AMZN">AMZN</option>
+                <option value="TSLA">TSLA</option>
+                <option value="NFLX">NFLX</option>
+                <option value="NVDA">NVDA</option>
+                <option value="BABA">BABA</option>
+                <option value="INTC">INTC</option>
+           </select>
+            <button id="search-stock">LOAD STOCK</button>
+        </div>
+
+        <!-- Trending Stocks Dropdown -->
+        <!-- <div class="trending-stocks">
+            <label for="trending-dropdown">Trending Stocks:</label>
+            <select id="trending-dropdown"></select>
+        </div> -->
+      <!-- Stock Graph -->
+        <div class="stock-graph">
+            <canvas id="stock-chart"></canvas>
+        </div>
+         <!-- Stock Information Table -->
+        <div class="stock-info">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Price</th>
+                        <th>Volume</th>
+                        <th>Change</th>
+                    </tr>
+                </thead>
+                <tbody id="stock-table-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
